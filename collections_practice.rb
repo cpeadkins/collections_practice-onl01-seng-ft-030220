@@ -35,5 +35,11 @@ def sum_array(array)
 end
 
 def add_s(array)
-
+  array.map.with_index do |x, i|
+    if i != 1
+      x + "s"
+    else
+      x
+    end
+  end
 end
